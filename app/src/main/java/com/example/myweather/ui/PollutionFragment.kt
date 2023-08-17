@@ -15,7 +15,6 @@ import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.ValueFormatter
 import com.github.mikephil.charting.utils.ColorTemplate
 
-
 class PollutionFragment : Fragment() {
     private var _binding: FragmentPollutionBinding? = null
 
@@ -55,7 +54,6 @@ class PollutionFragment : Fragment() {
 
         val barDataSet = BarDataSet(list, "Pollutants")
 
-
         barDataSet.setColors(ColorTemplate.VORDIPLOM_COLORS,255)
         barDataSet.valueTextColor = Color.BLACK
         barDataSet.barBorderColor = Color.BLACK
@@ -81,6 +79,4 @@ class PollutionFragment : Fragment() {
 
         return binding.root
     }
-
-
 }
