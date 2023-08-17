@@ -20,7 +20,7 @@ class RvAdapter( private val forecastArray: ArrayList<ForecastData>) : RecyclerV
        return ViewHolder(RvItemLayoutBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "SuspiciousIndentation")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = forecastArray[position]
         holder.binding.apply {
